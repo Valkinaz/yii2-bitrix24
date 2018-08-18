@@ -83,7 +83,9 @@ class Bitrix24Component extends Component implements Configurable
             }
         }
         catch(Exception $e)
+        {
             throw new HttpException(500);
+        }
     }
 
     protected function UpdateAuthToken()
