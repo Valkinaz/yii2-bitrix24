@@ -1,0 +1,33 @@
+{
+    "name": "valkinaz/yii2-bitrix24",
+    "description": "Компонент для работы с CRM Bitrix24",
+    "keywords": ["yii2", "bitrix", "bitrix24"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valkinaz",
+            "email": "valkinaz666@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+    	"php": ">=7.0",
+        "yiisoft/yii2": "~2.0.13",
+        "yiisoft/yii2-httpclient": "^2.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "valkinaz\\bitrix24\\": "src" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}

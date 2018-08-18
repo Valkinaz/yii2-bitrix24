@@ -1,0 +1,9 @@
+{
+	"class": "valkinaz\\bitrix24\\Bitrix24Component",
+	"host": "https://yoursubdomain.bitrix24.ru/",
+	"client_id": "local.xxxxxxxxxx.xxxxxx",
+	"client_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	"application_uri": "http://yourdomain.zz",
+	"access_token": "xxxxxxxxxxxxxxxxxxxxx",
+	"refresh_token": "xxxxxxxxxxxxxxxxxxxx"
+}
