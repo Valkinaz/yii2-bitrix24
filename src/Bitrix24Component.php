@@ -51,7 +51,15 @@ class Bitrix24Component extends Component implements Configurable
         parent::__construct();
     }
 
-    public function CreateRequest($action, $method = 'POST', $data = [])
+    public function Send($action, $method = 'POST', $data = [])
+    {
+        $this->CreateRequest($action, $method, $data);
+        $this->SendRequest();
+
+        return $this->response->content;
+    }
+
+    protected function CreateRequest($action, $method = 'POST', $data = [])
     {
         $client = new Client(['transport' => 'yii\httpclient\CurlTransport']);
 
@@ -61,7 +69,7 @@ class Bitrix24Component extends Component implements Configurable
             ->setData($data);
     }
 
-    public function SendRequest()
+    protected function SendRequest()
     {
         try
         {
