@@ -6,9 +6,6 @@
     <br>
 </p>
 
-Installation
-------------
-
 # Download and install
 ```
 composer require valkinaz/yii2-bitrix24
@@ -18,10 +15,10 @@ composer require valkinaz/yii2-bitrix24
 
 Create 2 files in your config directory. You can see examples at ```src``` folder:
 
-- bitrix24.json
+- ```bitrix24.json```
 This is a configuration of component. You must set your individual "host", "client_id", "client_secret", "application_uri", "access_token" and "refresh_token". Provide for this file permissions so that the script can overwrite it in the future.
 
-- bitrix24.php
+- ```bitrix24.php```
 This file using bitrix24.json and prepares component for Yii config.
 
 Then include component at the config:
@@ -35,7 +32,7 @@ $bitrix24 = require __DIR__ . '/bitrix24.php';
 
 # Usage
 
-Create contact for example. In the $response variable you'll get response from your CRM.
+Create contact for example. In the ```$response``` variable you'll get response from your CRM.
 ```
 $post = [
     'fields' => [
