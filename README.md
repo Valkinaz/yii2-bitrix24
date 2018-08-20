@@ -22,7 +22,7 @@ This is a configuration of component. You must set your individual "host", "clie
 This file using bitrix24.json and prepares component for Yii config.
 
 Then include component at the config:
-```
+```php
 $bitrix24 = require __DIR__ . '/bitrix24.php';
 
 'components' => [
@@ -33,7 +33,7 @@ $bitrix24 = require __DIR__ . '/bitrix24.php';
 # Usage
 
 Create contact for example. In the ```$response``` variable you'll get response from your CRM.
-```
+```php
 $post = [
     'fields' => [
         'NAME' => 'Example_name',
